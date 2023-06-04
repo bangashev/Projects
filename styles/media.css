@@ -27,10 +27,9 @@
             font-size: 30px;
             line-height: 40px;
             padding: 24px 16px;
-            font-family: 'TT Lakes';
+            font-family: "TTLakes-Bold";
             font-size: 28px;
             line-height: 40px;
-            font-style: bold;
         }
 
         .wrapper {
@@ -155,7 +154,6 @@
 
 .title {
     Font-family: "TTLakes-Bold";
-    Font-style: Bold;
     Font-size: 28px;
     Line-height: 40px;
 }
@@ -230,7 +228,7 @@
 }
 
 .title {
-    Font-style: Bold;
+    font-family:"TTLakes-Bold";
     Font-size: 28px;
     Line-height: 40px;
 }
