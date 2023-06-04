@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "TTLakes-Regular";
+
+}
+
+                                    /*Other*/
+
+button {
+    border: none;
+    background: none;
+}  
+
+.vl {
+    width: 2px;
+    background-color: #EAEAEA;
+    display: block;
+    border-radius: 1px;
+    height: 35px;
+}
+
+
+.link_item {
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    color: #7E7E82;
+    padding: 3px 8px;
+    border: 2px solid transparent;
+    Font-style: Medium;
+    Font-size: 28px;
+    Line-height: 24px;
+}
+
+.link_item:hover {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+                            /*Display none/ for DT*/
