@@ -9,10 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
 </head>
-<body>
+<body>    
+
+<div onclick="hideMain()" class="main">
+
  <header class="navbar_tb_mb">
     <div class="logo">
-        <button><img src="./icons/burger.svg" alt=""></button>
+        <button onclick="showBurger()"><img src="./icons/burger.svg" alt="" id="burger_main"></button>
         <div class="vl_tb vl"></div>
         <img src="./icons/Group.svg" alt="">
         <div class="vl_mb vl"></div>
@@ -72,6 +75,69 @@
         <img class="logo_img" src="./Images/_MG_3223.png" alt="">
     </div>
 </section>
+</div>
 
+<div class="burger" id="burger" onclick="hideBurger()"">
+    <nav class="burger__nav">
+        <div class="burger_logo">
+            <button onclick="showPage()" type="button"><img src="./icons/cancel.svg" alt="cancel"></button>
+            <img src="./icons/Group.svg" alt="logo">
+        </div>
+        <button><img src="./icons/search.svg" alt=""></button>
+    </nav>
+    <ul class="burger__links">
+        <li class="burger_item"><a class="burger_link" href="">Ремонт техники</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Услуги и сервисы</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Корпоративным клиентам</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Продавцам техники</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Партнерам</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Производителям</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Наши сервисные центры</a></li>
+        <li class="burger_item"><a class="burger_link" href="">Контакты</a></li>
+    </ul>
+    <div class="burger__icons">
+        <button><img src="./icons/call.svg" alt="call"></button>
+        <button><img src="./icons/chat.svg" alt="chat"></button>
+        <button><img src="./icons/profile.svg" alt="profile"></button>
+    </div>
+    <h3 class="burger__mail">mail@cps.com</h3>
+    <h2 class="burger__phone">8 800 890 8900</h2>
+    <ul class="burger__lang">
+        <li><button class="button_lang">RU</button></li>
+        <li><button class="button_lang">EN</button></li>
+        <li><button class="button_lang">CH</button></li>
+    </ul>
+</div>
+
+<script>
+    function showBurger() {
+        if (window.innerWidth === 768) {
+            let burger = document.getElementById("burger");
+            burger.style.display = "block";
+        }  
+    } 
+
+    function hideMain() {
+        if (window.innerWidth === 768) {
+        let main = document.querySelector(".main");
+        main.style.display = "none";
+        }
+    } 
+
+    function showPage() {
+        if (window.innerWidth === 768) {
+        let burger = document.getElementById("burger");
+        burger.style.display = "none";
+        }
+    } 
+
+    function hideBurger() {
+        if (window.innerWidth === 768) {
+        let main = document.querySelector(".main");
+        main.style.display = "block";
+        }
+    }
+</script>
+</script>
 </body>
 </html>

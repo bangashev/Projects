@@ -115,6 +115,10 @@
        .about__text_dt {
         display: none;
        }
+
+       .burger {
+        display: none;
+       }
     }                                         
 
 
@@ -181,7 +185,108 @@
     width: 100%;
     display: flex;
 }
+
+                                                /*Burger*/
+    .burger {
+        background-color: #ffffff;
+        width: 320px;
+        height: 1024px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 23px 24px;
+    }
+
+    .burger_logo {
+        display: flex;
+        gap: 17px;
+    }
+
+    .burger__links {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;   
+        padding: 30px 28px;
+        gap: 32px;
+        font-family: "TTLakes-Medium";
+        Font-size: 16px;
+        Line-height: 24px; 
+    }
+
+    .burger__icons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 0 24px;
+        margin-top: 230px;
+    }
+
+    .burger__mail {
+        display: flex;
+        padding: 16px 0 12px 24px;
+        margin: 0;
+        font-family: "TTLakes-Medium";
+        Font-size: 16px;
+        Line-height: 24px; 
+    }
+
+    .burger__phone {
+        display: flex;
+        padding: 0 24px;
+        margin: 0;
+        Font-size: 24px;
+        Line-height: 32px;
+        font-family: "TTLakes-Bold"; 
+    }
+
+    .burger__lang {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        gap: 7px;
+        padding: 40px 24px;
+        font-family: "TTLakes-Medium";
+        Font-size: 16px;
+        Line-height: 24px; 
+    }
+
+    .button_lang:hover {
+        color: #7E7E82
+        
+    }
+
+
+
+    button {
+        border: none;
+        padding: 0;
+        background: none;
+    }
+
+    .burger_link, .burger_item {
+        text-decoration: none;
+        list-style-type: none;
+        color: #1B1C21;
+        Font-size: 16px;
+        Line-height: 24px;
+    }
+
+
+
+
+                                                /*Burger*/
+                                
                                     /*Display none/block for (768px)*/ 
+.burger {
+    display: none;
+   }
+
 .links_dt {
     display: none;
  }
@@ -302,6 +407,10 @@
     width: 531px;
 }
                                     /*Display/none for DT (1120px)*/
+
+.burger {
+        display: none;
+       }
 
 .navbar_tb_mb {
     display: none;
